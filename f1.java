@@ -1,23 +1,24 @@
-public class Student {
+public class Employee {
 
     String name;
-    int age;
-    double marks;
+    int id;
+    double salary;
 
     void displayDetails() {
-        System.out.println("Student Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Marks: " + marks);
+        System.out.println("===== Employee Details =====");
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        System.out.println("Salary: ₹" + salary);
     }
 
     public static void main(String[] args) {
 
-        Student s = new Student();
+        Employee emp = new Employee();
 
-        s.name = "Abhay";
-        s.age = 21;
-        s.marks = 85.5;
+        emp.name = "Rahul";
+        emp.id = 101;
+        emp.salary = 35000;
 
-        s.displayDetails();
+        emp.displayDetails();
     }
 }
